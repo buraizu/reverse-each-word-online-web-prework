@@ -7,4 +7,9 @@ def reverse_each_word(sentence)
   reverse_array.join(" ")
 end 
 
-reverse_each_word("Hello there, and how are you?")
+def reverse_each_word(sentence)
+  array = sentence.split.each_slice(1).map{|a|a.join ' '}
+  array.collect do|word|
+    word.reverse
+  end
+end
