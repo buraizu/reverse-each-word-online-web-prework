@@ -9,8 +9,9 @@ end
 
 def reverse_each_word(sentence)
   array = sentence.split.each_slice(1).map{|a|a.join ' '}
+  return_array = []
   array.collect do|word|
-    word.reverse
+    reword.reverse
   end
   array.join(" ")
 end
